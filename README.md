@@ -10,7 +10,7 @@ brew install ruby
 gem install rspec
 
 # How to Staring Playing the Game
-Run >> ruby inde.rb
+Run >> ruby index.rb
 
 # How to run Test
 Run >> rspec test.rb
