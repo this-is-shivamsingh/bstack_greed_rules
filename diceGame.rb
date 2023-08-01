@@ -4,9 +4,9 @@ require_relative 'player'
 
 $currentPlayerIdx = -1
 $no_of_player = 0
-$max_score = 500
+$max_score = 700
 $min_score = 200
-
+$no_of_dices = 5
 def set_user_score(currentPlayerIdx, totalScore)
     currentScore = $players[currentPlayerIdx].totalScore
     if currentScore == 0 && totalScore < $min_score
@@ -107,7 +107,7 @@ def startGame
     excludedPlayerIdx = -1
     while !isFinalTurn
         $currentPlayerIdx = next_turn($currentPlayerIdx, $no_of_player)
-        score = play_your_turn($currentPlayerIdx, 6, false)
+        score = play_your_turn($currentPlayerIdx, $no_of_dices, false)
 
         set_user_score($currentPlayerIdx, score)
         currUserScore = get_user_score($currentPlayerIdx)
