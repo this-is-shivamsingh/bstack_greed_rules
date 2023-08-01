@@ -4,8 +4,8 @@ require_relative 'player'
 
 $currentPlayerIdx = -1
 $no_of_player = 0
-$max_score = 700
-$min_score = 200
+$max_score = 3000
+$min_score = 300
 $no_of_dices = 5
 def set_user_score(currentPlayerIdx, totalScore)
     currentScore = $players[currentPlayerIdx].totalScore
